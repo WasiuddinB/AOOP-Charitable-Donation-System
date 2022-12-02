@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MoneyP">
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="450.0" layoutX="153.0" layoutY="3.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Money.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="307.0" layoutY="14.0" text="Welcome!" textFill="#38555e" underline="true">
+               <font>
+                  <Font name="Comic Sans MS Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="46.0" text="A Place where you can donate money via contacting our Organization." textFill="#4683ab">
+               <font>
+                  <Font name="Comic Sans MS Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="115.0" text="Name:" textFill="#9a5151" underline="true">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="148.0" text="E-mail:" textFill="#9a5151" underline="true">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="181.0" text="Amount" textFill="#9a5151" underline="true">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="money_name" layoutX="153.0" layoutY="113.0" opacity="0.85" prefHeight="25.0" prefWidth="393.0" promptText="Enter Name">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="money_email" layoutX="154.0" layoutY="146.0" opacity="0.85" prefHeight="25.0" prefWidth="392.0" promptText="Enter E-mail">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="money_amount" layoutX="153.0" layoutY="179.0" opacity="0.85" prefHeight="25.0" prefWidth="393.0" promptText="Enter Amount">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+            <Button layoutX="294.0" layoutY="276.0" mnemonicParsing="false" onAction="#Done_btn" prefHeight="48.0" prefWidth="108.0" style="-fx-background-color: #ffffff;" text="DONE!" textFill="#860b0b">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Button>
+            <Label layoutX="121.0" layoutY="229.0" text="You will get an award if you donate more than 50000 BDT" textFill="#4683ab">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="8.0" layoutY="14.0" mnemonicParsing="false" onAction="#money_back" style="-fx-background-color: #ffffff;" text="&lt;-" textFill="#0387ff">
+               <font>
+                  <Font name="MS Outlook" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

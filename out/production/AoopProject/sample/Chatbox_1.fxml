@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #c3ecf2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Chatbox1">
+   <children>
+      <ImageView fitHeight="284.0" fitWidth="690.0" layoutX="66.0" layoutY="148.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/messaging.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="chat" layoutX="574.0" layoutY="341.0" mnemonicParsing="false" onAction="#chat_btn" prefHeight="42.0" prefWidth="120.0" style="-fx-background-color: #ffffff;" text="CONNECT" textFill="#7685b9" underline="true">
+         <font>
+            <Font name="Segoe UI Bold" size="15.0" />
+         </font></Button>
+      <TextArea fx:id="chat_area" editable="false" opacity="0.8" prefHeight="260.0" prefWidth="700.0" promptText="The Messages will be shown here.">
+         <font>
+            <Font name="SansSerif Italic" size="14.0" />
+         </font></TextArea>
+      <TextField fx:id="text_chat" layoutY="345.0" prefHeight="34.0" prefWidth="568.0" promptText="Enter Your Name.">
+         <font>
+            <Font name="SansSerif Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="18.0" layoutY="422.0" prefHeight="21.0" prefWidth="664.0" text="Provide your name and establish your connection and start texting with the other side.">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutY="469.0" mnemonicParsing="false" onAction="#goto_confirm" prefHeight="34.0" prefWidth="42.0" style="-fx-background-color: #ffffff;" text="&lt;-">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="42.0" layoutY="477.0" text="GO-BACK" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

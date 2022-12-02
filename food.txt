@@ -1,0 +1,10 @@
+NAMES:	E-MAIL_ID	(RICE)(OIL)(VEG)(MEAT)(SPICES)
+----------------------------------------------------------------
+
+Wais	wais@gmail	2 2 3 4 4
+Rais	rais@gmail	2 2 3 4 4
+Wais	wais@gmail	2 2 3 4 4
+Rais	rais@gmail	2 2 3 4 4
+		10 10 10 10 10
+		10 10 10 10 10
+		12 11 1 12 1

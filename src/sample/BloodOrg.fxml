@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BloodP">
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="475.0" layoutX="189.0" layoutY="5.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/blood.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="306.0" layoutY="3.0" text="Welcome!" textFill="#e80000" underline="true">
+               <font>
+                  <Font name="Century Gothic Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="41.0" text="A Place where you can donate Blood via contacting our Organization." textFill="#da2266" underline="true">
+               <font>
+                  <Font name="Eras Demi ITC" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="101.0" layoutY="103.0" text="Name:" textFill="#940404" underline="true">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="101.0" layoutY="140.0" text="E-mail" textFill="#940404" underline="true">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="blood_name" layoutX="158.0" layoutY="101.0" opacity="0.9" prefHeight="25.0" prefWidth="397.0" />
+            <TextField fx:id="blood_email" layoutX="158.0" layoutY="138.0" opacity="0.9" prefHeight="25.0" prefWidth="397.0" />
+            <Label layoutX="209.0" layoutY="235.0" text="Select the Blood-Types you want to donate:" textFill="#940404" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="A_pos" layoutX="128.0" layoutY="271.0" mnemonicParsing="false" text="A(+ve)" textFill="#b52400">
+               <font>
+                  <Font name="Dubai Medium" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="A_neg" layoutX="129.0" layoutY="312.0" mnemonicParsing="false" text="A(-ve)" textFill="#b52400">
+               <font>
+                  <Font name="Dubai Medium" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="B_pos" layoutX="228.0" layoutY="271.0" mnemonicParsing="false" text="B(+ve)" textFill="#b52400">
+               <font>
+                  <Font name="Dubai Medium" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="B_neg" layoutX="230.0" layoutY="312.0" mnemonicParsing="false" text="B(-ve)" textFill="#b52400">
+               <font>
+                  <Font name="Dubai Medium" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="AB_pos" layoutX="322.0" layoutY="271.0" mnemonicParsing="false" text="AB(+ve)" textFill="#b52400">
+               <font>
+                  <Font name="Dubai Medium" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="AB_neg" layoutX="323.0" layoutY="312.0" mnemonicParsing="false" text="AB(-ve)" textFill="#b52400">
+               <font>
+                  <Font name="Dubai Medium" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="O_pos" layoutX="430.0" layoutY="271.0" mnemonicParsing="false" text="O(+ve)" textFill="#b52400">
+               <font>
+                  <Font name="Dubai Medium" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="O_neg" layoutX="431.0" layoutY="312.0" mnemonicParsing="false" text="O(-ve)" textFill="#b52400">
+               <font>
+                  <Font name="Dubai Medium" size="13.0" />
+               </font>
+            </CheckBox>
+            <Button layoutX="280.0" layoutY="386.0" mnemonicParsing="false" onAction="#blood_done" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: #ffffff;" text="DONE" textFill="RED">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#blood_back" style="-fx-background-color: #ffffff;" text="&lt;-" textFill="#c60000">
+               <font>
+                  <Font name="HP Simplified Hans Regular" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

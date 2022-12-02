@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ClothesP">
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="495.0" fitWidth="600.0" layoutX="66.0" layoutY="3.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/clothes.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="312.0" layoutY="14.0" text="Welcome!!" textFill="#eb826f" underline="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="41.0" prefHeight="20.0" prefWidth="460.0" text="A Place where you can donate Clothes via contacting our Organization." textFill="#bf0202ec" underline="true">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="123.0" layoutY="95.0" text="Name:" textFill="#da441e" underline="true">
+               <font>
+                  <Font name="Cambria Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="121.0" layoutY="144.0" text="E-Mail:" textFill="#da441e" underline="true">
+               <font>
+                  <Font name="Cambria Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="clothe_name" layoutX="169.0" layoutY="91.0" opacity="0.8" prefHeight="25.0" prefWidth="407.0" />
+            <TextField fx:id="clothe_email" layoutX="169.0" layoutY="140.0" opacity="0.8" prefHeight="25.0" prefWidth="407.0" />
+            <Label layoutX="102.0" layoutY="190.0" prefHeight="21.0" prefWidth="499.0" text="Please Kindly select the products you want to donate via our organization:" textFill="#d35912">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="151.0" layoutY="221.0" mnemonicParsing="false" text="T-Shirt" underline="true">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="244.0" layoutY="221.0" mnemonicParsing="false" text="Shirt" underline="true">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="325.0" layoutY="221.0" mnemonicParsing="false" text="Pant" underline="true">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="416.0" layoutY="221.0" mnemonicParsing="false" text="FootWear" underline="true">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="518.0" layoutY="221.0" mnemonicParsing="false" text="Blankets" underline="true">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="127.0" layoutY="342.0" text="Quantity:" textFill="#da441e" underline="true">
+               <font>
+                  <Font name="Cambria Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tshirt_q" layoutX="195.0" layoutY="338.0" prefHeight="25.0" prefWidth="62.0" />
+            <TextField fx:id="shirt_q" layoutX="261.0" layoutY="338.0" prefHeight="25.0" prefWidth="62.0" />
+            <TextField fx:id="pant_q" layoutX="329.0" layoutY="338.0" prefHeight="25.0" prefWidth="62.0" />
+            <TextField fx:id="foot_q" layoutX="399.0" layoutY="338.0" prefHeight="25.0" prefWidth="62.0" />
+            <TextField fx:id="blan_q" layoutX="464.0" layoutY="338.0" prefHeight="25.0" prefWidth="62.0" />
+            <Label layoutX="201.0" layoutY="321.0" text="T-shirt">
+               <font>
+                  <Font name="Consolas Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="276.0" layoutY="321.0" text="Shirt">
+               <font>
+                  <Font name="Consolas Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="345.0" layoutY="321.0" text="Pant">
+               <font>
+                  <Font name="Consolas Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="401.0" layoutY="321.0" text="FootWear">
+               <font>
+                  <Font name="Consolas Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="470.0" layoutY="321.0" text="Blanket">
+               <font>
+                  <Font name="Consolas Italic" size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="307.0" layoutY="414.0" mnemonicParsing="false" onAction="#cloth_done" prefHeight="37.0" prefWidth="76.0" style="-fx-background-color: #ffffff;" text="DONE" textFill="#6f02ae">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="80.0" layoutY="275.0" prefHeight="21.0" prefWidth="560.0" text="You will get an award if you donate more than 5ps each from products down below." textFill="#880097">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#cloth_back" style="-fx-background-color: #ffffff;" text="&lt;-" textFill="#430d0d">
+               <font>
+                  <Font name="HP Simplified Hans Regular" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

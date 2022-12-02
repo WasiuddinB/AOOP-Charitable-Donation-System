@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StudyP">
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="521.0" fitWidth="538.0" layoutX="82.0" layoutY="2.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/study.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="303.0" layoutY="14.0" text="Welcome!" textFill="#1b4a1c" underline="true">
+               <font>
+                  <Font name="HP Simplified Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="47.0" text="A Place where you can donate Study-Goods via contacting our Organization." textFill="#139005" underline="true">
+               <font>
+                  <Font name="HP Simplified Hans Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="103.0" text="Name:" textFill="#226b31" underline="true">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="134.0" text="E-mail:" textFill="#226b31" underline="true">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="study_name" layoutX="136.0" layoutY="100.0" opacity="0.72" prefHeight="25.0" prefWidth="472.0" />
+            <TextField fx:id="study_email" layoutX="137.0" layoutY="131.0" opacity="0.72" prefHeight="25.0" prefWidth="471.0" />
+            <Label layoutX="205.0" layoutY="174.0" text="Choose the products you want to donate:" textFill="#226b31" underline="true">
+               <font>
+                  <Font name="Tahoma Bold" size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="Books_ch" layoutX="174.0" layoutY="209.0" mnemonicParsing="false" text="Books" underline="true">
+               <font>
+                  <Font name="Sitka Small" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Notes_ch" layoutX="306.0" layoutY="209.0" mnemonicParsing="false" text="Notepads" underline="true">
+               <font>
+                  <Font name="Sitka Small" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Pens_ch" layoutX="469.0" layoutY="209.0" mnemonicParsing="false" text="Pens/Pencils" underline="true">
+               <font>
+                  <Font name="Sitka Small" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Erase_ch" layoutX="174.0" layoutY="241.0" mnemonicParsing="false" text="Erasers" underline="true">
+               <font>
+                  <Font name="Sitka Small" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Sharpners_ch" layoutX="304.0" layoutY="241.0" mnemonicParsing="false" text="Sharpners" underline="true">
+               <font>
+                  <Font name="Sitka Small" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Bags_ch" layoutX="469.0" layoutY="276.0" mnemonicParsing="false" text="Bags" underline="true">
+               <font>
+                  <Font name="Sitka Small" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Staplers_ch" layoutX="177.0" layoutY="276.0" mnemonicParsing="false" text="Rulers" underline="true">
+               <font>
+                  <Font name="Sitka Small" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Calcs_ch" layoutX="306.0" layoutY="276.0" mnemonicParsing="false" text="Calculators" underline="true">
+               <font>
+                  <Font name="Sitka Small" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Staplers_ch" layoutX="469.0" layoutY="241.0" mnemonicParsing="false" text="Staplers" underline="true">
+               <font>
+                  <Font name="Sitka Small" size="13.0" />
+               </font>
+            </CheckBox>
+            <Button layoutX="298.0" layoutY="374.0" mnemonicParsing="false" onAction="#study_done" prefHeight="46.0" prefWidth="103.0" style="-fx-background-color: #ffffff;" text="DONE" textFill="#58c311">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="180.0" layoutY="321.0" text="You will get an award if you donate all of the items above!!" textFill="#1b4a1c" underline="true">
+               <font>
+                  <Font name="HP Simplified Italic" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#study_back" style="-fx-background-color: #ffffff;" text="&lt;-" textFill="#00a808">
+               <font>
+                  <Font name="Bell MT Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

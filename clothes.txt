@@ -1,0 +1,8 @@
+NAMES:	E-MAIL_ID	(T-SHIRT)(SHIRT)(PANT)(FOOTWEAR)(BLANKET)
+--------------------------------------------------------------------------------
+
+Waissa	waissa@gmail.com	2 1 4 3 1
+Waissa	waissa@gmail.com	2 1 4 3 1
+Waissa	waissa@gmail.com	2 1 4 3 1
+Waissa	waissa@gmail.com	2 1 4 3 1
+		1 1 1 1 1
